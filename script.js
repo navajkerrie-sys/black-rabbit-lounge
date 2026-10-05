@@ -54,14 +54,14 @@
     var v = function (k) { return form.elements[k].value; };
     var subject = encodeURIComponent('Reservation request from ' + v('name'));
     var body =
-    'Reservation Details:\n'+
-    'Name: ' + v('name') + '\n' +
-    'Email: ' + v('email') + '\n' +
-    'Date: ' + v('date') + '\n' +
-    'Time: ' + v('time') + '\n' +
-    'Guests: ' + v('guests') + '\n' +
-    'Seating: ' + v('seat') + '\n' +
-    'Special Occasion: ' + v('special') + '\n' +
+    'Reservation Details:\r\n'+
+    'Name: ' + v('name') + '\r\n' +
+    'Email: ' + v('email') + '\r\n' +
+    'Date: ' + v('date') + '\r\n' +
+    'Time: ' + v('time') + '\r\n' +
+    'Guests: ' + v('guests') + '\r\n' +
+    'Seating: ' + v('seat') + '\r\n' +
+    'Special Occasion: ' + v('special') + '\r\n' +
     'Notes: ' + v('notes');
     var bodyEnc = encodeURIComponent(body);
     var mailtoLink = 'mailto:' + BOOKING_EMAIL + '?subject=' + subject + '&body=' + bodyEnc;
