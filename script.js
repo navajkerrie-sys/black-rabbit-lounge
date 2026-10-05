@@ -52,9 +52,17 @@
     });
     if (!ok) { msg.textContent = 'Please complete the highlighted fields.'; return; }
     var v = function (k) { return form.elements[k].value; };
-    var body = 'Name: ' + v('name') + '\nEmail: ' + v('email') + '\nDate: ' + v('date') + ' at ' + v('time') +
-      '\nGuests: ' + v('guests') + '\nSeating: ' + v('seat') + '\nNotes: ' + v('notes') + '\nSpecial Occasion: ' + v('special');
     var subject = encodeURIComponent('Reservation request from ' + v('name'));
+    var body =
+    'Reservation Details:\n'+
+    'Name: ' + v('name') + '\n' +
+    'Email: ' + v('email') + '\n' +
+    'Date: ' + v('date') + '\n' +
+    'Time: ' + v('time') + '\n' +
+    'Guests: ' + v('guests') + '\n' +
+    'Seating: ' + v('seat') + '\n' +
+    'Special Occasion: ' + v('special') + '\n' +
+    'Notes: ' + v('notes');
     var bodyEnc = encodeURIComponent(body);
     var mailtoLink = 'mailto:' + BOOKING_EMAIL + '?subject=' + subject + '&body=' + bodyEnc;
     var gmailWebLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + BOOKING_EMAIL + '&su=' + subject + '&body=' + bodyEnc;
