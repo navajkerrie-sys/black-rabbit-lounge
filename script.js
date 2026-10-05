@@ -56,8 +56,11 @@
       '\nGuests: ' + v('guests') + '\nSeating: ' + v('seat') + '\nNotes: ' + v('notes') + '\nSpecial Occasion: ' + v('special');
     msg.textContent = 'Opening your email app to send the request.';
     var subject = encodeURIComponent('Reservation request from ' + v('name'));
-    var gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + BOOKING_EMAIL + '&su=' + subject + '&body=' + encodeURIComponent(body);
-    window.open(gmail, '_blank');
-    msg.textContent = 'Opening Gmail. If it does not open, please send your request manually to ' + BOOKING_EMAIL + '.';
+    var bodyEnc = encodeURIComponent(body);
+    var gmailApp = 'googlemail:///co?to=' + BOOKING_EMAIL + '&subject=' + subject + '&body=' + bodyEnc;
+    var gmailWeb = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + BOOKING_EMAIL + '&su=' + subject + '&body=' + bodyEnc;
+    window.location.href = gmailApp;
+    setTimeout(function () { window.location.href = gmailWeb; }, 500);
+    msg.textContent = 'Opening Gmail...';
   });
 })();
