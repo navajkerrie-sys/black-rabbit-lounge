@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Booking and Refund Policy | Black Rabbit</title>
+<meta name="description" content="Black Rabbit's policy on table reservations, deposits, cancellations, event tickets and refunds.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#f4ecdc">
+<link rel="icon" type="image/x-icon" href="/public/favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon_io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/public/favicon_io/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Black Rabbit</a>
+    <a class="btn sm" href="index.html">Back to home</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap legal">
+<h1>Booking and Refund Policy</h1>
+<p class="updated">Last updated: 5 November 2026</p>
+
+<p>We want your visit to be easy and fair. This policy explains how cancellations, deposits and refunds work at Black Rabbit. It should be read with our <a href="terms.html">Terms and Conditions</a>.</p>
+
+<h2>1. Standard table reservations</h2>
+<ul>
+<li>Standard table reservations made through this website are free. We don't take a deposit or payment when you submit the form, so there is nothing to refund.</li>
+<li>If you can't make it, please let us know as early as you can by WhatsApp, phone or email so we can offer the table to someone else.</li>
+<li>We hold your table for 15 minutes after the booked time. Please call us if you are running late.</li>
+</ul>
+
+<h2>2. Deposits and prepayments</h2>
+<p>For large groups, private hire, special occasions or ticketed events, we may ask for a deposit or full payment. We will tell you the amount and the terms in writing before you pay, and those terms apply alongside this policy.</p>
+
+<h2>3. Cancelling a booking with a deposit</h2>
+<ul>
+<li><strong>48 hours or more before your booking:</strong> full refund of your deposit, or you can move it to another date.</li>
+<li><strong>Less than 48 hours before, or no-show:</strong> the deposit is not refunded, unless we agree otherwise, for example for illness or an emergency.</li>
+<li>If you reduce your group size, we may adjust the deposit in line with the new numbers where possible.</li>
+</ul>
+
+<h2>4. If we cancel or change something</h2>
+<p>If we have to cancel your booking or an event, for example because of an emergency, safety concern or severe weather, we will tell you as soon as we can. You can choose to reschedule or to receive a full refund of any money you paid us for that booking or event. If we need to move you from the rooftop to indoor seating, that does not entitle you to a refund.</p>
+
+<h2>5. Food and drink on the day</h2>
+<p>If something isn't right with your order, such as the wrong item, a quality problem or an item that doesn't match what was described, tell a member of our team straight away. We will gladly replace it, remove it from your bill or refund it as appropriate. Items you have consumed in full, or change-of-mind orders, are generally not refundable. If you have an allergy, tell us before you order.</p>
+
+<h2>6. How refunds are paid</h2>
+<ul>
+<li>Refunds go back to the method you used to pay, such as the same card or mobile money account, unless we agree something else with you.</li>
+<li>Please allow up to 14 days for the money to appear. Bank and mobile money timings are outside our control.</li>
+</ul>
+
+<h2>7. Your legal rights</h2>
+<p>This policy does not affect your statutory rights as a consumer under Kenyan law.</p>
+
+<h2>8. How to ask for a refund</h2>
+<p>Contact us by email at <a href="mailto:navajkerrie@gmail.com">navajkerrie@gmail.com</a> or on WhatsApp at +254 712 364 610. Please include your name, the date of your booking or visit, and how you paid.</p>
+
+<div class="note"><p>Questions about this page? Email <a href="mailto:navajkerrie@gmail.com">navajkerrie@gmail.com</a> or call <a href="tel:+254712364610">+254 712 364 610</a>.</p></div>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div><strong class="logo">Black Rabbit</strong><p>Women-owned rooftop bar<br>Basic Mall Statehouse, Nakuru</p></div>
+  <div><p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="refund.html">Refunds</a></p></div>
+</div></footer>
+</body>
+</html>

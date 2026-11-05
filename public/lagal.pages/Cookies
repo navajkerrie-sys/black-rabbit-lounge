@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cookie Policy | Black Rabbit</title>
+<meta name="description" content="What cookies and similar technologies the Black Rabbit website uses, who sets them, and how you can control them.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#f4ecdc">
+<link rel="icon" type="image/x-icon" href="/public/favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon_io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/public/favicon_io/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Black Rabbit</a>
+    <a class="btn sm" href="index.html">Back to home</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap legal">
+<h1>Cookie Policy</h1>
+<p class="updated">Last updated: 5 November 2026</p>
+
+<p>This page explains what cookies are, which ones may be involved when you use the Black Rabbit website, and how you can control them. It should be read with our <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>1. What are cookies?</h2>
+<p>Cookies are small text files that a website or a service can store on your phone or computer. They are widely used to make sites work, remember choices and measure how sites are used. Similar technologies, such as local storage and tracking pixels, do much the same job.</p>
+
+<h2>2. What this website uses</h2>
+<p>We keep things simple. Our own site doesn't use advertising cookies, and it doesn't place analytics or tracking cookies on your device. These are the third-party services that are involved when you visit:</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Service</th><th>Provider</th><th>What it does</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>Google Fonts</td><td>Google</td><td>Loads the typefaces used on the site. Your browser contacts Google's servers, which receive your IP address and browser details to deliver the fonts.</td><td>Needed for the site's look</td></tr>
+<tr><td>WhatsApp button</td><td>Meta (WhatsApp)</td><td>Opens a chat with us when you tap the button. After that, WhatsApp's own cookies and policies apply.</td><td>Only if you click</td></tr>
+<tr><td>Enquiry counter</td><td>Black Rabbit</td><td>When you tap the WhatsApp button, a small message is sent to our automation tool recording the click, page and time. It does not set a cookie or store anything on your device.</td><td>Only if you click</td></tr>
+<tr><td>Hosting logs</td><td>Our web host</td><td>Servers keep standard technical logs (such as IP address and pages requested) for security and reliability.</td><td>Server side</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>3. Your choices</h2>
+<ul>
+<li>You can block or delete cookies in your browser settings. Because this site doesn't depend on cookies, it will keep working.</li>
+<li>You can avoid the WhatsApp button by contacting us by phone or email instead.</li>
+<li>Most browsers also let you block third-party requests or browse in private mode.</li>
+</ul>
+<p>Cookie settings are usually under Privacy or Security in your browser's menu. For third-party services, check their own policies, such as Google's and WhatsApp's.</p>
+
+<h2>4. If this changes</h2>
+<p>If we add things like analytics, maps, embedded videos or social media tools that use cookies, we will update this page first and ask for your consent where the law requires it.</p>
+
+<div class="note"><p>Questions about this page? Email <a href="mailto:navajkerrie@gmail.com">navajkerrie@gmail.com</a> or call <a href="tel:+254712364610">+254 712 364 610</a>.</p></div>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div><strong class="logo">Black Rabbit</strong><p>Women-owned rooftop bar<br>Basic Mall Statehouse, Nakuru</p></div>
+  <div><p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <a href="refund.html">Refunds</a></p></div>
+</div></footer>
+</body>
+</html>

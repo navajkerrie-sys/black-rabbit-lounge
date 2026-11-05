@@ -47,9 +47,8 @@
     </div>
     <div class="arch" aria-hidden="true">
       <div class="moon"></div>
-      <img src="public/rabbit.jpg" class="bunny" alt="My image" style="width: 100%; height: auto; object-fit: cover;">
+      <img src="public/rabbit.jpg" class="bunny" alt="Black Rabbit rooftop bar interior with warm lights" style="width: 100%; height: auto; object-fit: cover;">
     </div>
-</div>
   </div>
 </section>
 
@@ -108,6 +107,8 @@
     <label>Guests<select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7 or more</option></select></label>
     <label>Seating<select name="seat"><option>Inside</option><option>Rooftop</option><option>No preference</option></select></label>
     <label class="full">Notes<textarea name="notes" rows="3"></textarea></label>
+    <label class="full consent"><input type="checkbox" name="consent" id="consent" required><span>I agree that Black Rabbit may use the details above to handle my table request and contact me about it, as explained in the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. I have read the <a href="terms.html" target="_blank" rel="noopener">Terms and Conditions</a> and the <a href="refund.html" target="_blank" rel="noopener">Booking and Refund Policy</a>.</span></label>
+    <label class="full consent"><input type="checkbox" name="marketing" id="marketing"><span>Optional: I'd like to hear about events, quiz nights and offers from Black Rabbit. I can unsubscribe at any time.</span></label>
     <div class="full"><button class="btn" type="submit">Request my table</button><p class="msg" id="msg" role="status"></p></div>
   </form>
 </div></section>
@@ -115,19 +116,34 @@
 
 <footer><div class="wrap">
   <div><strong class="logo">Black Rabbit</strong><p>Women-owned rooftop bar<br>Basic Mall Statehouse, Nakuru</p></div>
-  <div><p>8:30 AM – 11:00 PM<br>+254 712 364 610<br><a href="mailto:hello@example.com">navajkerrie@gmail.com</a></p></div>
+  <div><p>8:30 AM – 11:00 PM<br>+254 712 364 610<br><a href="mailto:navajkerrie@gmail.com">navajkerrie@gmail.com</a></p></div>
+  <div><p><a href="terms.html">Terms and Conditions</a><br><a href="privacy.html">Privacy Policy</a><br><a href="cookies.html">Cookie Policy</a><br><a href="refund.html">Booking and Refund Policy</a></p></div>
 </div></footer>
 <a class="sticky" href="#reserve">Book a table</a>
+
 <script src="script.js"></script>
 <div id="wa-wrapper">
   <span id="wa-tooltip">Come chat with us</span>
-  <a id="whatsapp-float" href="https://wa.me/254712364610?text=Hi%20Black%20Rabbit!%20I%20want%20to%20book%20a%20table" target="_blank">
+  <a id="whatsapp-float" href="https://wa.me/254712364610?text=Hi%20Black%20Rabbit!%20I%20want%20to%20book%20a%20table" target="_blank" onclick="trackRabbitLead(this.href);return false;">
     <svg viewBox="0 0 32 32" width="32" height="32" fill="white" xmlns="http://www.w3.org/2000/svg">
       <path d="M16.04 2c-7.44 0-13.5 6.06-13.5 13.5 0 2.38.62 4.72 1.79 6.77L2.5 30l7.93-2.08c1.97 1.07 4.18 1.64 6.41 1.64 7.44 0 13.5-6.06 13.5-13.5S23.48 2 16.04 2zm0 24.3c-2.01 0-3.99-.54-5.71-1.55l-.41-.24-4.71 1.24 1.26-4.59-.27-.47c-1.12-1.9-1.71-4.08-1.71-6.33 0-6.19 5.04-11.23 11.24-11.23 3 0 5.82 1.17 7.94 3.3 2.12 2.12 3.29 4.94 3.29 7.93 0 6.19-5.04 11.24-11.13 11.24zm6.16-8.41c-.34-.17-2-.99-2.31-1.1-.31-.11-.54-.17-.76.17s-.88 1.1-1.08 1.33c-.19.22-.39.25-.72.08-.34-.17-1.42-.52-2.7-1.66-1-.89-1.67-1.99-1.87-2.33-.19-.34-.02-.52.14-.69.14-.14.34-.36.51-.54.17-.18.22-.31.34-.51.11-.2.06-.38-.03-.55-.08-.17-.76-1.83-1.04-2.51-.27-.65-.55-.56-.76-.57h-.65c-.22 0-.59.08-.9.38-.31.3-1.18 1.15-1.18 2.81s1.21 3.26 1.38 3.49c.17.22 2.38 3.63 5.77 5.09.81.35 1.44.56 1.93.71.81.26 1.55.22 2.13.13.65-.1 2-.82 2.28-1.61.28-.79.28-1.47.19-1.61-.08-.14-.31-.22-.65-.39z"/>
     </svg>
   </a>
 </div>
-
+<script>
+function trackRabbitLead(waLink){
+  fetch('https://blackrabbit-n8n.onrender.com/webhook/blackrabbit-lead',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      source:'whatsapp_float',
+      page:window.location.href,
+      time: new Date().toLocaleString('en-KE',{timeZone:'Africa/Nairobi'})
+    })
+  }).catch(()=>{});
+  setTimeout(()=>{window.open(waLink,'_blank');}, 300);
+}
+</script>
 <style>
 #wa-wrapper{position:fixed;bottom:86px;right:15px;z-index:9999;display:flex;align-items:center;gap:12px}
 #whatsapp-float{
@@ -149,35 +165,27 @@
   font-family:sans-serif;font-size:14px;white-space:nowrap;
   opacity:0;transform:translateX(20px);pointer-events:none;
   transition:all 0.4s ease;box-shadow:0 4px 10px rgba(0,0,0,0.3);
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 #wa-wrapper:hover #wa-tooltip, #wa-tooltip.show{opacity:1;transform:translateX(0)}
 @keyframes bubbleBounce{0%{transform:scale(1)}30%{transform:scale(1.4)}50%{transform:scale(0.9)}70%{transform:scale(1.2)}100%{transform:scale(1)}}
 .bounce{animation:bubbleBounce 0.6s ease}
-
-/* Mobile - make popup appear ABOVE the button */
 @media(max-width:768px){
   #wa-wrapper{flex-direction:column-reverse;align-items:flex-end}
   #wa-tooltip{transform:translateY(20px)}
   #wa-wrapper:hover #wa-tooltip, #wa-tooltip.show{transform:translateY(0)}
 }
 </style>
-
 <script>
 const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window;
 const tip = document.getElementById('wa-tooltip');
-
-// On mobile: show after 1 sec for 10 secs. On PC: show after 2 sec for 4 secs
 setTimeout(()=>{
   tip.classList.add('show');
-  const stayTime = isMobile ? 10000 : 4000; // 10 sec on mobile
+  const stayTime = isMobile ? 10000 : 4000;
   setTimeout(()=> tip.classList.remove('show'), stayTime);
 }, isMobile ? 1000 : 2000);
-
 document.getElementById('whatsapp-float').addEventListener('click',function(){
   this.classList.remove('bounce');void this.offsetWidth;this.classList.add('bounce');
 });
-</script>
 </script>
 </body>
 </html>
