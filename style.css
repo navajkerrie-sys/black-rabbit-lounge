@@ -21,7 +21,7 @@ section{padding:clamp(4rem,9vw,7rem) 0}
 .nav .logo,.nav ul a{color:#FFFBF5;text-shadow:0 1px 10px rgba(0,0,0,.45)}
 .nav ul a:hover{color:#fff}
 .nav .burger span{background:#FFFBF5;box-shadow:0 1px 6px rgba(0,0,0,.4)}
-.btn{display:block;width:fit-content;max-width:280px;margin:0 auto;text-align:center;background:var(--pink);color:var(--cream);font:700 1rem var(--sans);padding:.95rem 1.7rem;border:0;border-radius:12px;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s}
+.btn{display:block;width:fit-content;max-width:280px;margin:0 auto;text-align:center;background:var(--pink);color:var(--cream);font:700 1rem var(--sans);padding:.95rem 1.7rem;border:0;border-radius:5px;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s}
 .btn:hover{background:#9c3a66;transform:translateY(-1px)}
 .btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--line)}.btn.ghost:hover{background:rgba(94,64,44,.08)}
 .btn.sm{padding:.6rem 1.2rem;font-size:.92rem}
