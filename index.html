@@ -30,7 +30,6 @@
     <nav aria-label="Main"><ul id="menu">
       <li><a href="#whats-on">What's on</a></li><li><a href="#drinks">Drinks</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#visit">Visit</a></li>
     </ul></nav>
-    <a class="btn sm" href="#reserve">Book a table</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   </div>
 </header>
@@ -119,7 +118,6 @@
   <div><p>8:30 AM – 11:00 PM<br>+254 712 364 610<br><a href="mailto:navajkerrie@gmail.com">navajkerrie@gmail.com</a></p></div>
   <div><p><a href="terms.html">Terms and Conditions</a><br><a href="privacy.html">Privacy Policy</a><br><a href="cookies.html">Cookie Policy</a><br><a href="refund.html">Booking and Refund Policy</a></p></div>
 </div></footer>
-<a class="sticky" href="#reserve">Book a table</a>
 
 <script src="script.js"></script>
 <div id="wa-wrapper">
@@ -145,12 +143,12 @@ function trackRabbitLead(waLink){
 }
 </script>
 <style>
-#wa-wrapper{position:fixed;bottom:86px;right:15px;z-index:9999;display:flex;align-items:center;gap:12px}
+#wa-wrapper{position:fixed;bottom:50px;right:15px;z-index:9999;display:flex;align-items:center;gap:12px}
 #whatsapp-float{
   width:60px;height:60px;background:#25D366;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 4px 15px rgba(0,0,0,0.4);transition:0.3s;
-  animation: autoGlow 2s infinite;
+  animation: none;
 }
 @keyframes autoGlow{
   0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}

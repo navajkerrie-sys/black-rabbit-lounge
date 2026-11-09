@@ -119,6 +119,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
 .nav ul.open a{color:var(--text);text-shadow:none}
 .sticky{display:block;position:fixed;left:1rem;right:1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 1rem);z-index:15;text-align:center;background:var(--pink);color:var(--cream);font-weight:700;padding:1rem;border-radius:999px;text-decoration:none;box-shadow:0 8px 30px rgba(59,43,37,.3)}}
 
+
 /* FORM CONSENT */
 .consent{display:flex;gap:.75rem;align-items:flex-start;font-weight:400;font-size:.9rem;line-height:1.55;color:var(--muted)}
 .consent input{flex:none;width:20px;height:20px;margin:.2rem 0 0;padding:0;accent-color:var(--pink);border-radius:4px}
